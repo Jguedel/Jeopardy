@@ -1,0 +1,89 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+/* loading */
+#loading:hover{
+    cursor: pointer;
+  }
+  #spinner{
+    height: 100px;
+    width: 100px;
+  }
+  /* header */
+  .title{
+    font-size: 100px;
+  }
+  #startBtn{
+    font-size: 2.5em;
+  }
+  #restartBtn{
+    font-size: 2.5em;
+  }
+  /* table */
+  table:hover{
+    cursor: pointer;
+  }
+  table th{
+    overflow-wrap: break-word;
+    font-size: 3em;
+  
+  }
+  table td{
+    overflow-wrap: break-word;
+    font-size: 2em;
+  }
+  /* question */
+  #jeopardyCard:hover{
+    cursor: pointer;
+  }
+  .categor{
+    font-size: 4em;
+    text-decoration: underline;
+  }
+  .question{
+    min-height: 150px;
+    font-size: 2em;
+  }
+  .ans{
+    font-size: 3em;
+    font-weight: bold
+  }
+  #backBtn{
+    font-size: .5em;
+  }
+  /* gameOver */
+  #gameOver:hover{
+    cursor: pointer;
+  }
+  #gameOver div{
+    font-size: 6em;
+    min-height: 200px;
+  }
+  
+  /* got code from: https://www.florin-pop.com/blog/2019/03/css-pulse-effect/  */
+  .pulse {/*change blob-green to pulse*/
+    background: rgba(51, 217, 178, 1);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+    animation: pulse-green 2s infinite;
+  }
+  
+  @keyframes pulse-green {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 30px rgba(51, 217, 178, 0);  /*change 10 to 30*/
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+    }
+  }
