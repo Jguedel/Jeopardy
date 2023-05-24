@@ -61,7 +61,7 @@ async function setupAndStart() {
   let random = Math.floor(Math.random() * 30);
   console.log(`offset (lower of error): ${random}`);
   const catGet = await axios({
-    url: "http://jservice.io/api/categories",
+    url: "//jservice.io/api/categories",
     method: "GET",
     params: {
       count: 6,
@@ -73,7 +73,7 @@ async function setupAndStart() {
   for (const i of catGet.data) {
     //use categories to get questions
     const questionGet = await axios({
-      url: "http://jservice.io/api/category",
+      url: "//jservice.io/api/category",
       method: "GET",
       params: {
         id: i.id,
